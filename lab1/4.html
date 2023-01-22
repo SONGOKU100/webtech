@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Login Form</title>
+    <style>
+        
+        fieldset {
+            width: 300px;
+        }
+        input{
+            margin-top: 5px;
+        }
+    
+        button{
+            margin-left: 120px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.php" method="post">
+        <fieldset>
+            <legend><strong>User Login</strong></legend>
+            Username <input type="text" name="username" placeholder="Enter your username"> <br>
+            Password &nbsp;<input type="password" name="password" placeholder="Enter your password"><br>
+            <!-- <input type="submit" value="Login" id="login"> -->
+            <button value="login">Login</button>
+        </fieldset>
+    </form>
+</body>
+</html>

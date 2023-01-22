@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Form</title>
+    <style>
+        *{
+            margin-top: 5px;
+            padding: 8px;
+        }
+        fieldset{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <form action="register.php" method="get">
+        <fieldset>
+            <legend><strong>Sign Up</strong></legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="Full_Name" id="fullname"><br>
+            <span>Select your gender: </span>
+            Male <input type="radio" name="gender" value="male" checked>
+            Female <input type="radio" name="gender" value="female">
+            Others <input type="radio" name="gender" value="others"><br>
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address"><br>
+            <label for="phone_number">Contact Number:</label>
+            <input type="number" name="number" id="phone_number"><br>
+            <label for="Hobbies">Hobbies:</label><br>
+            <input type="checkbox" name="hobbies" value="hobiies[]">Traveling
+            <input type="checkbox" name="hobbies" value="hobbies[]">Games
+            <input type="checkbox" name="hobbies" value="hobbies[]">Musics
+            <input type="checkbox" name="hobbies" value="hobbies[]">Calisthenics
+            <br><button type="submit" value="submit">Submit</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>

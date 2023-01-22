@@ -1,0 +1,48 @@
+7.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="font-size: 50px;">This is Heading 1</h1>
+</body>
+</html>
+
+
+8.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+ <p>Write a HTML code to implement the font size of paragaraph using internal style </p>
+</body>
+</html>
+
+9.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div>Write a HTML code to implement the font size of paragaraph using internal style </div>
+</body>
+</html>
+
+external css
+div {
+      font-size: 40px;
+    }
+
+
+
