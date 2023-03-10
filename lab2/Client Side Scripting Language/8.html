@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>This is a paragraph</h1>
+    <p class="para">
+        This is a paragraph. This is a paragraph. This is a paragraph.
+    </p>
+    <button id="hide">Hide/Show</button>
+    <script>
+        const para = $(".para");
+        const hide = $("#hide");
+
+        hide.on('click', () => {
+            para.toggle({
+                duration: 100,
+            });
+        });
+    </script>
+</body>
+
+</html>

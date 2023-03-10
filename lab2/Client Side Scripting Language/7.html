@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Even/Odd Checker</h1>
+    Number: <input type="number" name="number" id="number" placeholder="Enter a number">
+    <button id="checkBtn">Check</button>
+    <script>
+        const checkBtn = $('#checkBtn');
+        const numberInputField = $('#number');
+
+        checkBtn.on('click', e => {
+            if (parseInt(numberInputField.val()) % 2 === 0) {
+                alert('The number is even');
+            } else {
+                alert('The number is odd');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cookie Using JS</title>
+</head>
+
+<body>
+    <h1 id="cookie"></h1>
+
+    <script>
+        document.cookie = "cookie=John doe";
+        const cookieValue = document.cookie
+            .split("; ")
+            .find(row => row.startsWith("cookie"))
+            .split("=")[1];
+        document.getElementById("cookie").innerText = cookieValue;
+    </script>
+</body>
+
+</html>
