@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Student>
+    <Name>John doe</Name>
+    <Address>Washington DC</Address>
+    <Email>johndoe@example.com</Email>
+    <Contact>189083634968</Contact>
+</Student>

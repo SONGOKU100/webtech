@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Student [
+<!ELEMENT Student (Name, Address, Email, Contact)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Contact (#PCDATA)>
+]>
+<Student>
+    <Name>John doe</Name>
+    <Address>Washington DC</Address>
+    <Email>johndoe@example.com</Email>
+    <Contact>189083634968</Contact>
+</Student>
