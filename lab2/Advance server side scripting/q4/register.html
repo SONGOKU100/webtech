@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myForm').submit(function (event) {
+                event.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: 'db.php',
+                    data: $(this).serialize(),
+                    dataType: 'json', // Set the expected data type
+                    success: function (response) {
+                        alert(response.message);
+                    },
+                    // success: function () {
+                    //     alert('form was submitted');
+                    // },
+                    error: function () {
+                        alert('An error occurred while submitting the form.');
+                    }
+                });
+            });
+        });
+ 
+    </script>
+    <style>
+        .colour {
+            color: white;
+            background-color: black;
+            padding-left: 50px;
+            width: 400px;
+        }
+    </style>
+</head>
+ 
+<body class="colour">
+    <form id="myForm" class="colour">
+        <fieldset>
+            <legend>Form</legend>
+            <input type="email" name="email" placeholder="email"><br>
+            <input type="password" name="password" placeholder="password"><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+ 
+</body>
+ 
+</html>
