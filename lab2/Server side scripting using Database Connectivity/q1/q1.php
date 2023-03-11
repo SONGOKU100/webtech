@@ -149,21 +149,11 @@
       <h1>Question No:1</h1>
 
       <div class="err" id="fullname_err"><?php echo $fullNameErr; ?></div>
-      <input
-        type="text"
-        id="fullname"
-        name="fullname"
-        placeholder="Enter FullName"
-        value="<?php echo $fullNameVal; ?>"
+      <input type="text" id="fullname" name="fullname" placeholder="Enter FullName" value="<?php echo $fullNameVal; ?>"
       />
 
       <div class="err" id="address_err"><?php echo $addressErr; ?></div>
-      <input
-        type="text"
-        id="address"
-        name="address"
-        placeholder="Enter Address"
-        value="<?php echo $addressVal; ?>"
+      <input type="text" id="address" name="address" placeholder="Enter Address" value="<?php echo $addressVal; ?>"
       />
 
       <div class="err" id="email_err"><?php echo $emailErr; ?></div>
@@ -172,31 +162,15 @@
       <div>
         <p>Select gender</p>
         <label for="male">Male</label>
-        <input
-        checked
-          class="gender_input"
-          type="radio"
-          name="gender"
-          value="male"
-          id="male"
+        <input checked class="gender_input" type="radio" name="gender" value="male" id="male"
         />
 
         <label for="female">Female</label>
-        <input
-          class="gender_input"
-          type="radio"
-          name="gender"
-          value="female"
-          id="female"
+        <input class="gender_input" type="radio" name="gender" value="female" id="female"
         />
 
         <label for="others">Others</label>
-        <input
-          class="gender_input"
-          type="radio"
-          name="gender"
-          value="others"
-          id="others"
+        <input class="gender_input" type="radio" name="gender" value="others" id="others"
         />
       </div>
 
@@ -204,36 +178,19 @@
       <input type="file" name="uploadImage" placeholder="select image"  />
 
       <div class="err" id="contactNumber_err"><?php echo $contactNumErr; ?></div>
-      <input
-        type="text"
-        name="contactNumber"
-        id="contactNumber"
-        placeholder="Enter you contact number"
-        value="<?php echo $contactNumVal; ?>"
+      <input type="text" name="contactNumber" id="contactNumber" placeholder="Enter you contact number" value="<?php echo $contactNumVal; ?>"
       />
 
       <div class="err" id="citizenshipNumber_err"><?php echo $citizenshipNumErr; ?></div>
-      <input
-        type="text"
-        name="citizenshipNumber"
-        id="citizenshipNumber"
-        placeholder="Enter citizenship number"
-        value="<?php echo $citizenshipNumVal; ?>"
+      <input type="text" name="citizenshipNumber" id="citizenshipNumber" placeholder="Enter citizenship number" value="<?php echo $citizenshipNumVal; ?>"
       />
 
       <div class="err" id="fathersName_err"><?php echo $fathersNameErr; ?></div>
-      <input
-        type="text"
-        name="fathersName"
-        id="fathersName"
-        placeholder="Enter father's name"
-        value="<?php echo $fathersNameVal; ?>"
+      <input type="text" name="fathersName" id="fathersName" placeholder="Enter father's name" value="<?php echo $fathersNameVal; ?>"
       />
 
       <button type="submit">submit</button>
     </form>
-
-    
     </script>
   </body>
 </html>
